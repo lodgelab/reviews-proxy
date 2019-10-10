@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ./server/server.js"
+    "start": "nodemon ./server/server.js",
+    "artillery": "artillery run hello.yml"
   },
   "repository": {
     "type": "git",
@@ -18,9 +19,11 @@
   },
   "homepage": "https://github.com/minctech/reservations-proxy#readme",
   "dependencies": {
+    "compression": "^1.7.4",
     "express": "^4.17.1",
+    "express-http-proxy": "^1.6.0",
     "morgan": "^1.9.1",
-    "newrelic": "^5.11.0",
-    "nodemon": "^1.19.1"
+    "newrelic": "^5.13.0",
+    "nodemon": "^1.19.3"
   }
 }

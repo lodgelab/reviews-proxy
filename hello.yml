@@ -10,4 +10,4 @@ scenarios:
   - name: 'Get property listings from proxy'
     flow:
     - get:
-        url: "/{{$randomNumber(1,100000000)}}"
+        url: "/listings/{{$randomNumber(1,10000000)}}"
